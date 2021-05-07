@@ -36,6 +36,9 @@ a:hover{
 
 .logo{
     background-color: #ECA4A4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
