@@ -19,10 +19,10 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     word-spacing: 100px;
     width: 100%;
-    height: 20px;
+    height: 25px;
 }
 a{
     text-decoration: none;
@@ -41,8 +41,22 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: 70px;
+    color: #EFEDE1;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
 }
 
+#icons8_yar {
+    width: 64px;
+    height: 64px;
+    background-image: url("./imgs/icons8_yarn_64px_2.png");
+  }
 
 main{
     position: relative;
@@ -67,7 +81,6 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row: 1fr 1fr;
-    border: 1px dotted #8F7B7B;
     overflow: hidden;
 }
 
@@ -87,6 +100,7 @@ p{
     flex-direction: column;
     position: relative;
     top: 40px;
+    border: 1px dotted #8F7B7B;
 }
 .contact a{
     position: relative;
@@ -95,7 +109,7 @@ p{
     justify-content: space-around; 
     color:#8F7B7B;;
     font-size: 20px;
-    top: 20px;
+    margin-top: 20px;
 }
 .contact img{
     background-color: #ECA4A4;
