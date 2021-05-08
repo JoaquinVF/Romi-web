@@ -154,7 +154,7 @@ p{
     margin-bottom: 10px
 }
 .contact a:hover{
-    text-decoration: ;
+    transform: scale(1.15);
 }
 .contact img{
     background-color: #ECA4A4;
