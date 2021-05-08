@@ -160,7 +160,12 @@ p{
     background-color: #ECA4A4;
     border-radius: 10px;
 }
-
+footer{
+    position: relative;
+    bottom: -60px;
+    font-size: 14px;
+    opacity: 0.8;
+}
 @media screen and (min-width: 768px) {
     nav{
         position: absolute;
@@ -183,5 +188,8 @@ p{
     .contact{
         font-size: calc(13px + 5 * ((100vw - 320px) / 680));
         border: 1px solid #8f7b7b60;
+    }
+    footer{
+        font-size: calc(12px + 6 * ((100vw - 320px) / 680))
     }
 }
