@@ -23,8 +23,10 @@ body{
 /*  #ECA4A4 ROSA FONDO
     #8F7B7B OSCURO
     #EFEDE1 CLARO   */
-
 nav{
+    width: 100%;
+}
+.menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,11 +38,11 @@ a{
     text-decoration: none;
     color: #8F7B7B;
 }
-nav a{
+.menu a{
     width: 50%;
     text-align: center;
 }
-nav a:hover{
+.menu a:hover{
     text-decoration: underline;
 }
 .inicio{
@@ -85,19 +87,27 @@ h1{
     font-weight: 500;
     margin-bottom: 0;
 }
+p{
+    font-weight: 400;
+}
+
+
+.portada{
+    position: relative;
+}
 .portada img{
     width: 150px;
     height: 150px;
     border-radius: 100%;
     border: 5px solid #8F7B7B;
+    transition: all 0.3s;
 }
 .portada img:hover{
-    transform: scale(1.02);
     border: 5px solid #5e4f4f;
+    transform: scale(1.02);
 }
-p{
-    font-weight: 400;
-}
+
+
 
 .gallery{
     position: relative;
@@ -133,6 +143,22 @@ p{
     background-image: url("./imgs/corpiñoturquesa.jpg");
     background-position: -140px center;
 }
+.pic4{
+    background-image: url("./imgs/bikini\ grande.jpg");
+    background-position: -40px center;
+}
+
+h2{
+    font-size: 2em;
+}
+.invierno{
+    display: flex;
+}
+.pic-inv1{
+    background-image: url("./imgs/poncho.jpg");
+}
+
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -151,7 +177,8 @@ p{
     color:#8F7B7B;;
     font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    transition: all 0.3s;
 }
 .contact a:hover{
     transform: scale(1.15);
@@ -160,21 +187,34 @@ p{
     background-color: #ECA4A4;
     border-radius: 10px;
 }
+.contact .contact-text:hover{
+    transform: scale(1);
+}
 footer{
     position: relative;
     bottom: -60px;
-    font-size: 14px;
+    font-size: 1em;
     opacity: 0.8;
 }
 @media screen and (min-width: 768px) {
     nav{
-        position: absolute;
-        top: 40px;
-        justify-content: space-between;
-        font-size: calc(13px + 6 * ((100vw - 320px) / 680))
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        font-size: calc(13px + 5 * ((100vw - 320px) / 680))
     }
-    nav a:hover{
-        color: #EFEDE1;
+    .menu{
+        background-color: #EFEDE1;
+        justify-content: flex-end;
+        width: 300%;
+        height: 70px;
+        border-bottom: 1px solid #5e4f4f2f;
+    }
+    .menu a{
+        color: #eca4a4d3;
+    }
+    .menu a:hover{
+        color: #5e4f4f;
     }
     .inicio{
         border: none;
@@ -185,11 +225,14 @@ footer{
     .gallery div{
         background-position: center center;
     }
+    h2{
+        margin-top: 100px;
+    }
     .contact{
         font-size: calc(13px + 5 * ((100vw - 320px) / 680));
         border: 1px solid #8f7b7b60;
     }
     footer{
-        font-size: calc(12px + 6 * ((100vw - 320px) / 680))
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680))
     }
 }
