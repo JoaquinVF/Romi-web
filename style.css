@@ -213,6 +213,11 @@ footer{
         border-bottom: 1px solid #5e4f4f2f;
     }
     .menu a{
+        width: 15%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #eca4a4d3;
     }
     .menu a:hover{
