@@ -220,6 +220,10 @@ footer{
     .inicio{
         border: none;
     }
+    .portada img{
+        width: 300px;
+        height: 300px;
+    }
     .gallery{
         border-radius: 2%;
     }
