@@ -263,7 +263,10 @@ footer{
     .menu a:hover{
         color: #5e4f4f;
     }
-
+    .menu img{
+        width: 30px;
+        height: 30px;
+    }
 
 
     .portada img{
