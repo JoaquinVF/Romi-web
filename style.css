@@ -105,9 +105,9 @@ main{
     max-width: 800px;
 }
 h1{
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 main p{
     font-weight: 400;
@@ -173,7 +173,7 @@ main p{
 }
 
 h2{
-    font-size: 2em;
+    font-size: 3rem;
 }
 .invierno{
    
