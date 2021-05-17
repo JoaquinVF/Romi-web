@@ -1,3 +1,14 @@
+function openMenu(){
+  element = document.getElementById("catalogo");
+  menu = document.getElementsByClassName("catalogo-menu");
+  if (element.click){
+    menu.style.display="flex";
+  }
+  else{
+    menu.style.display="none";
+  }
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
