@@ -1,3 +1,6 @@
+const winter = document.getElementById("winter")
+const summer = document.getElementById("summer")
+
 function openMenu(){
   element = document.getElementById("catalogo");
   menu = document.getElementsByClassName("catalogo-menu");
@@ -36,4 +39,14 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+function showSummer(){
+  winter.style.color = "#5e4f4f";
+  summer.style.color = "#be8496";
+}
+
+function showWinter(){
+  summer.style.color = "#5e4f4f";
+  winter.style.color = "#8b8bd6";
 }

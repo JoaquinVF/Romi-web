@@ -123,9 +123,26 @@ main{
     margin-top: 0px;
     max-width: 800px;
 }
-h1{
+.temp-selector{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.winter, .summer{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    cursor: pointer;
+}
+.winter{
+    color: #8b8bd6;
+}
+.temp-selector span{
+    font-size: 1rem;
+}
+.temporada{
     font-weight: bold;
-    margin-bottom: 0;
+    margin: 0;
     font-size: 2rem;
 }
 main p{
